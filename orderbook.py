@@ -85,7 +85,6 @@ def main():
 
     ob.show_orderbook_snapshot()
 
-    # 执行市价买单（吃ask）
     print(">>> Market buy order: 180")
     trades = ob.match_market_order('buy', 180)
     for trade in trades:
@@ -93,7 +92,6 @@ def main():
 
     ob.show_orderbook_snapshot()
 
-    # 执行市价卖单（吃bid）
     print(">>> Market sell order: 250")
     trades = ob.match_market_order('sell', 250)
     for trade in trades:
